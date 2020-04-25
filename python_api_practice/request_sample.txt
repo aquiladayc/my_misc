@@ -1,0 +1,53 @@
+curl -X POST \
+-H "Content-type: application/json" \
+-d '{ 
+        "x" : 1,
+        "y" : 2
+}' \
+"http://localhost:5050/add"
+
+
+curl -X POST \
+-H "Content-type: application/json" \
+-d '{ 
+        "x" : 1,
+        "y" : 4curl -X POST \
+-H "Content-type: application/json" \
+-d '{ 
+        "x" : 1,
+        "y" : 4
+}' \
+"http://localhost:5050/subtract"
+
+curl "http://localhost:5050/hello"
+
+
+-------------------------------------------
+
+curl -X POST \
+-H "Content-type: application/json" \
+-d '{ 
+        "username" : "akira",
+        "password" : "password"
+}' \
+"http://localhost:5050/register"
+
+curl -X POST \
+-H "Content-type: application/json" \
+-d '{ 
+        "username" : "akira",
+        "password" : "password",
+        "sentence" : "Hello world!"
+}' \
+"http://localhost:5050/store"
+
+curl -X POST \
+-H "Content-type: application/json" \
+-d '{ 
+        "username" : "akira",
+        "password" : "password"
+}' \
+"http://localhost:5050/get"
+
+
+python3 app.py
