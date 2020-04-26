@@ -1,7 +1,7 @@
 curl -X POST \
 -H "Content-type: application/json" \
 -d '{ 
-        "username" : "akira",
+        "username" : "user",
         "password" : "password"
 }' \
 "http://localhost:5050/register"
@@ -9,7 +9,7 @@ curl -X POST \
 curl -X POST \
 -H "Content-type: application/json" \
 -d '{ 
-        "username" : "akira",
+        "username" : "user",
         "password" : "password",
         "text1" : "text1",
         "text2" : "text1"
@@ -19,7 +19,7 @@ curl -X POST \
 curl -X POST \
 -H "Content-type: application/json" \
 -d '{ 
-        "username" : "akira",
+        "username" : "user",
         "admin_pw" : "admin",
         "refill" : 10
 }' \
