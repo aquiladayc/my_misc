@@ -1,0 +1,26 @@
+curl -X POST \
+-H "Content-type: application/json" \
+-d '{ 
+        "username" : "akira",
+        "password" : "password"
+}' \
+"http://localhost:5050/register"
+
+curl -X POST \
+-H "Content-type: application/json" \
+-d '{ 
+        "username" : "akira",
+        "password" : "password",
+        "text1" : "text1",
+        "text2" : "text1"
+}' \
+"http://localhost:5050/detect"
+
+curl -X POST \
+-H "Content-type: application/json" \
+-d '{ 
+        "username" : "akira",
+        "admin_pw" : "admin",
+        "refill" : 10
+}' \
+"http://localhost:5050/refill"
